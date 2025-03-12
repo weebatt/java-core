@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Main-Class: first_lab
+Created-By: 17.0.8

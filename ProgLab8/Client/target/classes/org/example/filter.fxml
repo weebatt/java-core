@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+
+<AnchorPane prefHeight="302.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.stages.FilterDialogStage">
+   <children>
+      <GridPane Hgap="10" Vgap="10" layoutX="27.0" layoutY="42.0">
+         <padding>
+            <Insets bottom="10" left="10" right="10" top="10" />
+         </padding>
+      
+         <Label text="Username:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+         <TextField fx:id="usernameFilter" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+      
+         <Label text="Students Count Min:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+         <TextField fx:id="studentsCountMinFilter" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      
+         <Label text="Students Count Max:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+         <TextField fx:id="studentsCountMaxFilter" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      
+         <Label text="Group Name:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+         <TextField fx:id="groupNameFilter" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      
+         <Button onAction="#applyFilters" text="Apply Filters" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="4" />
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+      </GridPane>
+   </children>
+</AnchorPane>

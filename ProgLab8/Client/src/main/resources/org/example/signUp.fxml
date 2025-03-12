@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.stages.SignUpStage">
+   <children>
+      <Text layoutX="227.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registration" textAlignment="CENTER">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Text>
+      <TextField fx:id="passwordVisible2" layoutX="220.0" layoutY="226.0" />
+      <TextField fx:id="usernameText" layoutX="220.0" layoutY="118.0" />
+      <Text layoutX="220.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
+      <Text layoutX="221.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+      <Button layoutX="315.0" layoutY="273.0" mnemonicParsing="false" onMouseClicked="#checkingPassword" text="Continue" textAlignment="CENTER" />
+      <PasswordField fx:id="passwordHidden2" layoutX="220.0" layoutY="226.0" />
+      <Text layoutX="220.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Repeat password" />
+      <CheckBox fx:id="showPasswordButton" layoutX="394.0" layoutY="229.0" mnemonicParsing="false" onMouseClicked="#showPassword" prefHeight="18.0" prefWidth="116.0" text="Show password" />
+      <Text fx:id="textOfError" fill="RED" layoutX="189.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="220.21630859375">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="passwordVisible1" layoutX="219.0" layoutY="173.0" />
+      <PasswordField fx:id="passwordHidden1" layoutX="219.0" layoutY="173.0" />
+      <Button layoutX="221.0" layoutY="273.0" mnemonicParsing="false" onMouseClicked="#switchBack" prefHeight="26.0" prefWidth="67.0" text="Back" textAlignment="CENTER" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.stages.TableStage">
+   <children>
+      <TableView fx:id="table" layoutX="19.0" layoutY="116.0" prefHeight="499.0" prefWidth="1358.0">
+        <columns>
+          <TableColumn fx:id="groupId" prefWidth="75.0" text="groupId" />
+          <TableColumn fx:id="userName" prefWidth="75.0" text="userName" />
+            <TableColumn fx:id="groupName" prefWidth="75.0" text="groupName" />
+            <TableColumn fx:id="creationDate" prefWidth="75.0" text="creationDate" />
+            <TableColumn fx:id="coordinates" prefWidth="75.0" text="coordinates" />
+            <TableColumn fx:id="studentsCount" prefWidth="67.14218139648438" text="studentsCount" />
+            <TableColumn fx:id="expelledStudents" prefWidth="66.44369506835938" text="expelledStudents" />
+            <TableColumn fx:id="transferredStudents" prefWidth="78.12255859375" text="transferredStudents" />
+            <TableColumn fx:id="formOfEducation" prefWidth="91.87744140625" text="formOfEducation" />
+            <TableColumn fx:id="adminName" prefWidth="75.0" text="adminName" />
+            <TableColumn fx:id="height" prefWidth="75.0" text="height" />
+            <TableColumn fx:id="eyeColor" prefWidth="75.0" text="eyeColor" />
+            <TableColumn fx:id="hairColor" prefWidth="75.0" text="hairColor" />
+            <TableColumn fx:id="nationality" prefWidth="75.0" text="nationality" />
+            <TableColumn fx:id="locationName" prefWidth="75.0" text="locationName" />
+            <TableColumn fx:id="locationXY" prefWidth="75.0" text="location" />
+        </columns>
+      </TableView>
+      <GridPane layoutX="86.0" layoutY="42.0" prefHeight="30.0" prefWidth="1263.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" onMouseClicked="#backToCommands" prefHeight="44.0" prefWidth="147.0" text="Back" GridPane.rowIndex="1" />
+            <Button alignment="CENTER" mnemonicParsing="false" onMouseClicked="#callDialogPane" prefHeight="44.0" prefWidth="147.0" text="Filter" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onMouseClicked="#removeKey" prefHeight="44.0" prefWidth="147.0" text="RemoveKey" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onMouseClicked="#removeGreaterKey" prefHeight="44.0" prefWidth="147.0" text="RemoveGreaterKey" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button fx:id="removeButton" mnemonicParsing="false" prefHeight="44.0" prefWidth="147.0" text="Remove" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onMouseClicked="#clear" prefHeight="44.0" prefWidth="147.0" text="Clear" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onMouseClicked="#callRemoveLower" prefHeight="44.0" prefWidth="147.0" text="Call removeLower" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onMouseClicked="#callRemoveGreater" prefHeight="44.0" prefWidth="147.0" text="Call removeGreater" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <TextField fx:id="numberOfKey" layoutX="435.0" layoutY="80.0" prefHeight="26.0" prefWidth="80.0" />
+      <TextField fx:id="numberOfGreaterKey" layoutX="596.0" layoutY="80.0" prefHeight="26.0" prefWidth="80.0" />
+   </children>
+</AnchorPane>
